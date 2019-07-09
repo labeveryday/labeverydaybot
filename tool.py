@@ -416,8 +416,8 @@ def reply_to_tweets(reply_list):
         time.sleep(15)
 
 
-while True:
-    if __name__ == '__main__':
+if __name__ == '__main__':
+    while True:
         reply_to_tweets(reply_list)
         find_tweets()
         time.sleep(15)
