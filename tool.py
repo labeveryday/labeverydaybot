@@ -2,6 +2,9 @@ import random
 import tweepy
 import time
 
+__author__ = "Du'An Lightfoot"
+__email__ = "duanl@labeveryday"
+
 CONSUMER_KEY = ' '
 CONSUMER_SECRET = ' '
 ACCESS_KEY = ' ' 
