@@ -22,321 +22,283 @@ print('The user is %s' % user.name)
 FILE_NAME = 'last_seen_id.txt'
 SECOND_FILE = 'last_reply'
 
-reply1 = """
-Hey thanks for the message! Here's an #inspirationalquote. 
-'You miss 100% of the shots you don’t take. –Wayne Gretzky' #LabEveryday  
-"""
-reply2 = """
-Whats up? Thanks for the message! Here's one of my favorite #inspirationalquotes.
-'The mind is everything. What you think you become.  –Buddha' #LabEveryday
-"""
-reply3 = """
-Hola! Thanks for the message! Here's one of my favorite #inspirationalquotes.
-'The best time to plant a tree was 20 years ago. The second best time is now. –Chinese Proverb' #LabEveryday
-"""
-reply4 = """
-Whats good? Thanks for the message! Here's a #inspirationalquote.
-'Eighty percent of success is showing up. –Woody Allen' #LabEveryday
-"""
-reply5 = """
-Hey thanks for the message! Here's a interesting #techfact.
-'The first Apple logo was of Sir Isaac Newton sitting underneath a tree,
-with an apple about to hit his head.' #LabEveryday
-"""
-reply6 = """
-Hey! Thanks for the message! Here's a fun #techfact.
-'Bill Gates was a college dropout. And so was Kanye West!' #LabEveryday
-"""
-reply7 = """
-Hola! Thanks for the message! Here's a fun #techfact.
-'Did you know Alaska is the only state that can be typed on one row of a traditional QWERTY keyboard.' #LabEveryday
-"""
-reply8 = """
-Hey! Thanks for the message! Here's a #inspirationalquote.
-'Go confidently in the direction of your dreams.  Live the life you have imagined. –Henry David Thoreau' #LabEveryday
-"""
-reply9 = """
-Hey, how are you? Thanks for the message! Here's one awesome #inspirationalquote.
-'Everything you’ve ever wanted is on the other side of fear. –George Addair' #LabEveryday
-"""
-reply10 = """
-Happy Monday! Wait, is it Monday? Thanks for the message! Here's one awesome #inspirationalquote.
-'You can’t fall if you don’t climb.  But there’s no joy in living your whole life on the ground.' #LabEveryday
-"""
-reply11 = """
-Turn up Tuesday! Ummm... Is it Tuesday? Thanks for the message! Here's a #inspirationalquote.
-'To learn and not do is really not to learn! - Stephan Covey' #LabEveryday
-"""
+reply1 = ("Hey thanks for the message! Here's an #inspirationalquote.\n"
+          "'You miss 100% of the shots you don’t take. –Wayne Gretzky' #LabEveryday")
 
-reply12 = """
-I love Fridays! Thanks for the message! Here's a truly #inspirationalquote.
-'It does not matter how slowly you go as long as you do not stop. –Confucius' #LabEveryday
-"""
-reply13 = """
-Hey whats up? Thanks for the message! Here's a super #techfact.
-'Did you know 8 billion devices will be connected to the internet by 2020?
-Great time to be a NetworkEngineer' #LabEveryday
-"""
-reply14 = """
-Sunday Funday? I'm sure its not Sunday lol. Thanks for the message! Here's a interesting #techfact.
-'Did you know that the company Cisco's name derived from San Francisco?' #LabEveryday
-"""
-reply15 = """
-Sunday Funday? I'm sure its not Sunday lol. Thanks for the message! Here's a interesting #techfact.
-'Did you know that the company Cisco's name derived from San Francisco?' #LabEveryday
-"""
-reply16 = """
-Whats up fam? Thanks for the message! Here's a helpful #techfact.
-'Last time I checked. Indeed listed 60,827 open Network Engineer positions in the US!' #LabEveryday
-"""
-reply17 = """
-Hola! Thanks for the message! Here's a fun #techfact.
-'Did you know Google receives over 63,000 searches per second on any given day?' #LabEveryday
-"""
-reply18 = """
-Hola! Thanks for the message! Here's a interesting #techfact.
-'According to CBTNuggets there are an estimated 59,737 CCIEs in the world!' #LabEveryday
-"""
-reply19 = """
-What's! What day is it? If today is Wednesday I think I ran out of responses.......
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
- SYKE! 
- Here's a fun #techfact.
-'Technophobia is the fear of technology!' #LabEveryday
-"""
-reply20 = """
-What's! What day is it? If today is Thursday I am taking the day off.......
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
- SYKE! 
- Here's a fun #techfact.
-'Did you know the last /22 block of ipv4 addresses were chopped and dished out and 2017?' #LabEveryday
-"""
-reply21 = """
-#YOUWIN #Linux #QuizTime! Thanks for the message! 
-Here's a Linux related #techquestion.
-Which of these is not related to linux? 
-A. Open platform
-B. Open Source
-C. Debian
-D. Active Directory
-#LabEveryday
-"""
-reply22 = """
-#YOUWIN #Linux #QuizTime! Thanks for the message! 
-Here's a Linux related #techquestion.
-In Ubuntu how do execute Super User Privileges? 
-A. sudo
-B. pwd
-C. loginas:
-D. ssh -l 
-#LabEveryday
-"""
-reply23 = """
-#YOUWIN #Linux #QuizTime! Thanks for the message! 
-Here's a Linux related #techquestion.
-How do you navigate back to the home directory? 
-A. cd ..
-B. ls
-C. cd - 
-D. cd 
-#LabEveryday
-"""
-reply24 = """
-#YOUWIN #Python #QuizTime! Thanks for the message! 
-Here's a Python related #techquestion.
-Python is a interpreted language? 
-A. True
-B. False
-#LabEveryday
-"""
-reply25 = """
-#YOUWIN #Linux #QuizTime! Thanks for the message! 
-Here's a Linux related #techquestion.
-Which command is an improvement on the more command? 
-A. cat
-B. head
-C. less
-D. tail
-#LabEveryday
-"""
-reply26 = """
-#YOUWIN #Linux #QuizTime! Thanks for the message! 
-Here's a Linux related #techquestion.
-In which file is DNS information referenced? 
-A. /etc/network/interfaces
-B. host 
-C. dns.txt
-D. resolv.conf
-#LabEveryday
-"""
-reply27 = """
-#YOUWIN #Linux #QuizTime! Thanks for the message! 
-Here's a Linux related #techquestion.
-How do you display interface ip information in linux? 
-A. ipconfig
-B. ping
-C. ifconfig
-D. show ip route
-#LabEveryday
-"""
-reply28 = """
-#YOUWIN #Linux #QuizTime! Thanks for the message! 
-Here's a Linux related #techquestion.
-What is the name of the first process that the Linux kernel runs, aside from itself? 
-A. who
-B. init 
-C. cron
-D. bootp
-#LabEveryday
-"""
-reply29 = """
-#YOUWIN #Linux #QuizTime! Thanks for the message! 
-Here's a Linux related #techquestion.
-Which command changes a files group? 
-A. groupmod
-B. groupadd
-C. chmod
-D. chown
-#LabEveryday
-"""
-reply30 = """
-#YOUWIN #Security #QuizTime! Thanks for the message! 
-Here's a Security+ related #techquestion.
-What would you use to verify security controls are in place? 
-A. ping
-B. port analyzer 
-C. penetration test
-D. vulnerability scan
-#LabEveryday
-"""
-reply31 = """
-#YOUWIN #Security #QuizTime! Thanks for the message! 
-Here's a Security+ related #techquestion.
-On which port would you apply an ACL to block IMAP traffic? 
-A. 143
-B. 22
-C. 443
-D. 3389
-#LabEveryday
-"""
-reply32 = """
-#YOUWIN #Security #QuizTime! Thanks for the message! 
-Here's a Security+ related #techquestion.
-What would you use to verify security controls are in place? 
-A. ping
-B. port analyzer 
-C. penetration test
-D. vulnerability scan
-#LabEveryday
-"""
-reply33 = """
-#YOUWIN #Security #QuizTime! Thanks for the message! 
-Here's a Security+ related #techquestion.
-Which protocols utilize UDP ports 161 and 162? 
-A. HTTPS
-B. SNMP 
-C. SSL
-D. APPLETALK
-#LabEveryday
-"""
-reply34 = """
-#YOUWIN #Security #QuizTime! Thanks for the message! 
-Here's a Security+ related #techquestion.
-Full disk encryption prevents? 
-A. Client side attacks
-B. Theft
-C. Viruses
-D. Clear text access
-#LabEveryday
-"""
-reply35 = """
-#YOUWIN #Security #QuizTime! Thanks for the message! 
-Here's a Security+ related #techquestion.
-A buffer overflow can result in which attack type? 
-A. ARP poisoning
-B. Zero-day
-C. DNS poisoning
-D. Pivilege escalation
-#LabEveryday
-"""
-reply36 = """
-#YOUWIN #Security #QuizTime! Thanks for the message! 
-Here's a Security+ related #techquestion.
-Which of the following sets multiple flag fields in a TCP packet? 
-A. ARP poisoning
-B. Zero-day
-C. XMAS
-D. Pivilege escalation
-#LabEveryday
-"""
-reply37 = """
-#YOUWIN #Security #QuizTime! Thanks for the message! 
-Here's a Security+ related #techquestion.
-In regards to PKI which component MUST be trusted by all parties? 
-A. Private Key
-B. Door key
-C. CA
-D. Key to the city
-#LabEveryday
-"""
-reply38 = """
-#YOUWIN #Security #QuizTime! Thanks for the message! 
-Here's a Security+ related #techquestion.
-This is used to trick people in social engineer? 
-A. Software scan
-B. Human nature
-C. Protocol violation
-D. Applications issues 
-#LabEveryday
-"""
-reply39 = """
-#YOUWIN #Security #QuizTime! Thanks for the message! 
-Here's a Security+ related #techquestion.
-Which is related to Bitlocker? 
-A. ping
-B. TPM
-C. ACL
-D. ipconfig 
-#LabEveryday
-"""
-reply40 = """
-#YOUWIN #CCNA #QuizTime! Thanks for the message! 
-Here's a CCNA related #techquestion.
-A MAC address operates at what layer of the OSI model? 
-A. 1
-B. 4
-C. 2
-D. 7
-#LabEveryday
-"""
-reply41 = """
-#YOUWIN #CCNA #QuizTime! Thanks for the message! 
-Here's a CCNA related #techquestion.
-Which MAC address begins a frame? 
-A. destination node
-B. router
-C. source node
-D. firewall
-#LabEveryday
-"""
+reply2 = ("Whats up? Thanks for the message! Here's one of my favorite #inspirationalquotes.\n"
+          "The mind is everything. What you think you become.  –Buddha' #LabEveryday")
+
+reply3 = ("Hola! Thanks for the message! Here's one of my favorite #inspirationalquotes.\n"
+          "The best time to plant a tree was 20 years ago. The second best time is now. –Chinese Proverb' #LabEveryday")
+
+reply4 = ("Whats good? Thanks for the message! Here's a #inspirationalquote.\n"
+          "Eighty percent of success is showing up. –Woody Allen' #LabEveryday")
+
+reply5 = ("Hey thanks for the message! Here's a interesting #techfact.\n"
+          "The first Apple logo was of Sir Isaac Newton sitting underneath a tree,\n"
+          "with an apple about to hit his head.' #LabEveryday")
+
+reply6 = ("Hey! Thanks for the message! Here's a fun #techfact.\n"
+          "Bill Gates was a college dropout. And so was Kanye West!' #LabEveryday")
+
+reply7 = ("Hola! Thanks for the message! Here's a fun #techfact.\n"
+          "Did you know Alaska is the only state that can be typed on"
+          " one row of a traditional QWERTY keyboard.' #LabEveryday")
+
+reply8 = ("Hey! Thanks for the message! Here's a #inspirationalquote.\n"
+          "Go confidently in the direction of your dreams.  "
+          "Live the life you have imagined. –Henry David Thoreau' #LabEveryday")
+
+reply9 = ("Hey, how are you? Thanks for the message! Here's one awesome #inspirationalquote.\n"
+          "Everything you’ve ever wanted is on the other side of fear. –George Addair' #LabEveryday")
+
+reply10 = ("Happy Monday! Wait, is it Monday? Thanks for the message! Here's one awesome #inspirationalquote.\n"
+           "You can’t fall if you don’t climb.  But there’s no joy in living your whole life on the ground.' "
+           "#LabEveryday")
+
+reply11 = ("Turn up Tuesday! Ummm... Is it Tuesday? Thanks for the message! Here's a #inspirationalquote.\n"
+           "To learn and not do is really not to learn! - Stephan Covey' #LabEveryday")
+
+reply12 = (" love Fridays! Thanks for the message! Here's a truly #inspirationalquote.\n"
+           "'It does not matter how slowly you go as long as you do not stop. –Confucius' #LabEveryday")
+
+reply13 = ("Hey whats up? Thanks for the message! Here's a super #techfact.\n"
+           "'Did you know 8 billion devices will be connected to the internet by 2020?\n"
+           "Great time to be a NetworkEngineer' #LabEveryday")
+
+reply14 = ("Sunday Funday? I'm sure its not Sunday lol. Thanks for the message!\n"
+           "Here's a interesting #techfact. Did you know that the company Cisco's name derived from San Francisco?'\n"
+           "#LabEveryday")
+
+reply15 = ("Sunday Funday? I'm sure its not Sunday lol. Thanks for the message! Here's a interesting #techfact.\n"
+           "Did you know that the company Cisco's name derived from San Francisco?' #LabEveryday")
+
+reply16 = ("Whats up fam? Thanks for the message! Here's a helpful #techfact.\n"
+           "Last time I checked. Indeed listed 60,827 open Network Engineer positions in the US!' #LabEveryday")
+
+reply17 = ("Hola! Thanks for the message! Here's a fun #techfact.\n"
+           "'Did you know Google receives over 63,000 searches per second on any given day?' #LabEveryday")
+
+reply18 = ("Hola! Thanks for the message! Here's a interesting #techfact.\n"
+           "According to CBTNuggets there are an estimated 59,737 CCIEs in the world!' #LabEveryday")
+
+reply19 = ("What's! What day is it? If today is Wednesday I think I ran out of responses.......\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           "SYKE!\n"
+           "Here's a fun #techfact.\n"
+           "'Technophobia is the fear of technology!' #LabEveryday")
+
+reply20 = ("What's! What day is it? If today is Thursday I am taking the day off.......\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           ".\n"
+           "SYKE!\n"
+           "Here's a fun #techfact.\n"
+           "'Did you know the last /22 block of ipv4 addresses were chopped and dished out and 2017?' #LabEveryday")
+
+reply21 = ("#Linux #QuizTime! Thanks for the message!\n"
+           "Here's a Linux related #techquestion.\n"
+           "Which of these is not related to linux?\n"
+           "A. Open platform\n"
+           "B. Open Source\n"
+           "C. Debian\n"
+           "D. Active Directory\n"
+           "#LabEveryday")
+
+
+reply22 = ("#Linux #QuizTime! Thanks for the message!\n"
+           "Here's a Linux related #techquestion.\n"
+           "In Ubuntu how do execute Super User Privileges?\n"
+           "A. sudo\n"
+           "B. pwd\n"
+           "C. loginas:\n"
+           "D. ssh -l\n"
+           "#LabEveryday")
+
+reply23 = ("#Linux #QuizTime! Thanks for the message!\n"
+           "Here's a Linux related #techquestion.\n"
+           "How do you navigate back to the home directory?\n"
+           "A. cd ..\n"
+           "B. ls\n"
+           "C. cd -\n"
+           "D. cd\n"
+           "#LabEveryday")
+
+reply24 = ("#Python #QuizTime! Thanks for the message!\n"
+           "Here's a Python related #techquestion.\n"
+           "Python is a interpreted language?\n"
+           "A. True\n"
+           "B. False\n"
+           "#LabEveryday")
+
+reply25 = ("#Linux #QuizTime! Thanks for the message!\n"
+           "Here's a Linux related #techquestion.\n"
+           "Which command is an improvement on the more command?\n"
+           "A. cat\n"
+           "B. head\n"
+           "C. less\n"
+           "D. tail\n"
+           "#LabEveryday")
+
+reply26 = ("#Linux #QuizTime! Thanks for the message!\n"
+           "Here's a Linux related #techquestion.\n"
+           "In which file is DNS information referenced?\n"
+           "A. /etc/network/interfaces\n"
+           "B. host\n"
+           "C. dns.txt\n"
+           "D. resolv.conf\n"
+           "#LabEveryday")
+
+reply27 = ("#Linux #QuizTime! Thanks for the message!\n"
+           "Here's a Linux related #techquestion.\n"
+           "How do you display interface ip information in linux?\n"
+           "A. ipconfig\n"
+           "B. ping\n"
+           "C. ifconfig\n"
+           "D. show ip route"
+           "#LabEveryday")
+
+reply28 = ("#Linux #QuizTime! Thanks for the message!\n"
+           "Here's a Linux related #techquestion.\n"
+           "What is the name of the first process that the Linux kernel runs, aside from itself?\n"
+           "A. who\n"
+           "B. init\n"
+           "C. cron\n"
+           "D. bootp\n"
+           "#LabEveryday")
+
+reply29 = ("#Linux #QuizTime! Thanks for the message!\n"
+           "Here's a Linux related #techquestion.\n"
+           "Which command changes a files group?\n"
+           "A. groupmod\n"
+           "B. groupadd\n"
+           "C. chmod\n"
+           "D. chown\n"
+           "#LabEveryday")
+
+reply30 = ("#Security #QuizTime! Thanks for the message!\n"
+           "Here's a Security+ related #techquestion.\n"
+           "What would you use to verify security controls are in place?\n"
+           "A. ping\n"
+           "B. port analyzer\n"
+           "C. penetration test\n"
+           "D. vulnerability scan\n"
+           "#LabEveryday")
+
+reply31 = ("#Security #QuizTime! Thanks for the message!\n"
+           "Here's a Security+ related #techquestion.\n"
+           "On which port would you apply an ACL to block IMAP traffic?\n"
+           "A. 143\n"
+           "B. 22\n"
+           "C. 443\n"
+           "D. 3389\n"
+           "#LabEveryday")
+
+reply32 = ("#Security #QuizTime! Thanks for the message!\n"
+           "Here's a Security+ related #techquestion.\n"
+           "What would you use to verify security controls are in place?\n"
+           "A. ping\n"
+           "B. port analyzer\n"
+           "C. penetration test\n"
+           "D. vulnerability scan\n"
+           "#LabEveryday")
+
+reply33 = ("#Security #QuizTime! Thanks for the message!\n"
+           "Here's a Security+ related #techquestion.\n"
+           "Which protocols utilize UDP ports 161 and 162?\n"
+           "A. HTTPS\n"
+           "B. SNMP\n"
+           "C. SSL\n"
+           "D. APPLETALK\n"
+           "#LabEveryday")
+
+reply34 = ("#Security #QuizTime! Thanks for the message!\n"
+           "Here's a Security+ related #techquestion.\n"
+           "Full disk encryption prevents?\n"
+           "A. Client side attacks\n"
+           "B. Theft\n"
+           "C. Viruses\n"
+           "D. Clear text access\n"
+           "#LabEveryday")
+
+reply35 = ("#Security #QuizTime! Thanks for the message!\n"
+           "Here's a Security+ related #techquestion.\n"
+           "A buffer overflow can result in which attack type?\n"
+           "A. ARP poisoning\n"
+           "B. Zero-day\n"
+           "C. DNS poisoning\n"
+           "D. Pivilege escalation\n"
+           "#LabEveryday")
+
+reply36 = ("#Security #QuizTime! Thanks for the message!\n"
+           "Here's a Security+ related #techquestion.\n"
+           "Which of the following sets multiple flag fields in a TCP packet?\n"
+           "A. ARP poisoning\n"
+           "B. Zero-day\n"
+           "C. XMAS\n"
+           "D. Pivilege escalation"
+           "#LabEveryday")
+
+reply37 = ("#Security #QuizTime! Thanks for the message!\n"
+           "Here's a Security+ related #techquestion.\n"
+           "In regards to PKI which component MUST be trusted by all parties?\n"
+           "A. Private Key\n"
+           "B. Door key\n"
+           "C. CA\n"
+           "D. Key to the city\n"
+           "#LabEveryday")
+
+reply38 = ("#Security #QuizTime! Thanks for the message!\n"
+           "Here's a Security+ related #techquestion.\n"
+           "This is used to trick people in social engineer?\n"
+           "A. Software scan\n"
+           "B. Human nature\n"
+           "C. Protocol violation\n"
+           "D. Applications issues\n"
+           "#LabEveryday")
+
+reply39 = ("#Security #QuizTime! Thanks for the message!\n"
+           "Here's a Security+ related #techquestion.\n"
+           "Which is related to Bitlocker?\n"
+           "A. ping\n"
+           "B. TPM\n"
+           "C. ACL\n"
+           "D. ipconfig\n"
+           "#LabEveryday")
+
+reply40 = ("#CCNA #QuizTime! Thanks for the message!\n"
+           "Here's a CCNA related #techquestion.\n"
+           "A MAC address operates at what layer of the OSI model?\n"
+           "A. 1\n"
+           "B. 4\n"
+           "C. 2\n"
+           "D. 7\n"
+           "#LabEveryday")
+
+reply41 = ("#CCNA #QuizTime! Thanks for the message!\n"
+           "Here's a CCNA related #techquestion.\n"
+           "Which MAC address begins a frame?\n"
+           "A. destination node\n"
+           "B. router\n"
+           "C. source node\n"
+           "D. firewall\n"
+           "#LabEveryday")
 
 reply_list = [reply1, reply2, reply3, reply4, reply5, reply6, reply7, reply8, reply9, reply10,
               reply11, reply12, reply13, reply14, reply15, reply16, reply17, reply18, reply19, reply20, reply21,
@@ -364,7 +326,7 @@ def find_tweets():
             time.sleep(6)
             api.create_friendship(id=tweet.user.id)
             time.sleep(3)
-            api.create_mute(id=tweet.user.id)
+            # api.create_mute(id=tweet.user.id)
         except tweepy.TweepError as e:
             # Catching errors
             if e.args[0][0]['code'] == 139:
